@@ -1,0 +1,11 @@
+<h1> VCONSTRUCT Assignment </h1> 
+
+<h2> Response for  'https://reqres.in/api/unknown' </h2>
+<p> <%= @resp1 %> </p>
+
+<h2> Response for  'https://reqres.in/api/products' </h2>
+<p> <%= @resp2 %> </p>
+
+
+<h2> Merged Response </h2>
+<p> <%= @merged_response.to_json.delete! '\\' %> </p>
